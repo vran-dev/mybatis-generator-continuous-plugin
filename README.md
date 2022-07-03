@@ -4,7 +4,7 @@
 
 ### Usage
 ```xml
-<plugin type="cc.cc1234.mybatis.plugin.NullSafePlugin">
+<plugin type="cc.cc1234.mybatis.generator.NullSafePlugin">
     <!-- 会忽略对指定列的处理 -->
     <property name="ignore.columns"
               value="*.create_time,*.update_time,*.create_at,*.active_from,*.active_to,*.operation_time,point_rule.start_time,point_rule.end_time,*.event_properties,*.reward"/>
@@ -73,7 +73,7 @@ public class User {
 
 ### Usage
 ```xml
-<plugin type="cc.cc1234.mybatis.plugin.MapperPlusPlugin">
+<plugin type="cc.cc1234.mybatis.generator.MapperPlusPlugin">
     <!-- BaseMapper 配置目录-->
     <property name="base-mapper.target.project" value="${mybatis.generator.javaProjectDir}"/>
     <property name="base-mapper.target.package" value="${mybatis.generator.mapper.package}"/>
